@@ -1,0 +1,5 @@
+FROM golang:1.18.1-alpine3.15
+WORKDIR /usr/src/app
+ENV MINIO_SERVER_ACCESS_KEY=minioadmin
+ENV MINIO_SERVER_SECRET_KEY=minioadmin
+CMD go run main.go
